@@ -23,7 +23,7 @@
 		}
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.11.0",
+	"libVersion": "2.11.3",
 	"appid": "wxa709d53eb1d91b0d",
 	"projectname": "wygl-wechat",
 	"debugOptions": {

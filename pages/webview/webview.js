@@ -5,14 +5,31 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    url:'http://172.16.98.38:8080',
+    plan_place_id:'',
+    token:'',
+    scanId:'',
+    ins_plan_id:'',
+    ins_place_name:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(options)
+    this.setData({
+      plan_place_id: options.plan_place_id || '',
+      scanId:options.scanId || '',
+      token: options.token || '',
+      ins_plan_id: options.ins_plan_id || '',
+      ins_place_name: options.ins_place_name || ''
+    })
+    if (this.data.plan_place_id && this.data.token){
+      this.setData({
+        url: 'http://172.16.98.38:8080?ins_place_name=' + this.data.ins_place_name+'&ins_plan_id=' + this.data.ins_plan_id +' &plan_place_id=' + this.data.plan_place_id+'&scanId=' + this.data.scanId+'&token='+this.data.token
+      })
+    }
   },
 
   /**

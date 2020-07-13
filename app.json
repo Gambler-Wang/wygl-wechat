@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/webview/webview",
+    "pages/polling/scan",
     "pages/index/index"
   ],
   "window":{
