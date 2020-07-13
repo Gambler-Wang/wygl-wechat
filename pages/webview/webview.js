@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    url:'http://172.16.98.38:8080',
+    url:'https://xhuachina.com/wyglApp/',
     plan_place_id:'',
     token:'',
     scanId:'',
@@ -27,7 +27,7 @@ Page({
     })
     if (this.data.plan_place_id && this.data.token){
       this.setData({
-        url: 'http://172.16.98.38:8080?ins_place_name=' + this.data.ins_place_name+'&ins_plan_id=' + this.data.ins_plan_id +' &plan_place_id=' + this.data.plan_place_id+'&scanId=' + this.data.scanId+'&token='+this.data.token
+        url: 'https://xhuachina.com/wyglApp/?ins_place_name=' + this.data.ins_place_name+'&ins_plan_id=' + this.data.ins_plan_id +' &plan_place_id=' + this.data.plan_place_id+'&scanId=' + this.data.scanId+'&token='+this.data.token
       })
     }
   },
